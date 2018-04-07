@@ -1,0 +1,1 @@
+# CollectionViewWithPaging-simplerExample
