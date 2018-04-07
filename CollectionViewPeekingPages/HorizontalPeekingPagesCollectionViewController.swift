@@ -26,8 +26,8 @@ class HorizontalPeekingPagesCollectionViewController: UICollectionViewController
         configureCollectionViewLayoutItemSize()
     }
 
-    func calculateSectionInset() -> CGFloat {
-        return 100 // should be overrided
+    func calculateSectionInset() -> CGFloat { // should be overridden
+        return 100
     }
 
     private func configureCollectionViewLayoutItemSize() {
