@@ -40,7 +40,10 @@ class HorizontalPeekingPagesCollectionViewController: UICollectionViewController
     private func indexOfMajorCell() -> Int {
         let itemWidth = collectionViewFlowLayout.itemSize.width
         let proportionalOffset = collectionViewLayout.collectionView!.contentOffset.x / itemWidth
-        return Int(round(proportionalOffset))
+        let index = Int(round(proportionalOffset))
+        let numberOfItems = collectionView.numberOfItems(inSection: 0)
+        let safeIndex = max(0, min(numberOfItems - 1, index))
+        return safeIndex
     }
 
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
@@ -74,7 +77,7 @@ class HorizontalPeekingPagesCollectionViewController: UICollectionViewController
             }, completion: nil)
 
         } else {
-            // This is a much better to way to scroll to a cell:
+            // This is a much better way to scroll to a cell:
             let indexPath = IndexPath(row: indexOfMajorCell, section: 0)
             collectionViewLayout.collectionView!.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
