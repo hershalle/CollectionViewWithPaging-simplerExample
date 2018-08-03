@@ -12,8 +12,6 @@
 		986F17252078094500FC39A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F17232078094500FC39A5 /* Main.storyboard */; };
 		986F17272078094700FC39A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986F17262078094700FC39A5 /* Assets.xcassets */; };
 		986F172A2078094700FC39A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986F17282078094700FC39A5 /* LaunchScreen.storyboard */; };
-		986F17352078094700FC39A5 /* CollectionViewPeekingPagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F17342078094700FC39A5 /* CollectionViewPeekingPagesTests.swift */; };
-		986F17402078094700FC39A5 /* CollectionViewPeekingPagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F173F2078094700FC39A5 /* CollectionViewPeekingPagesUITests.swift */; };
 		986F174E207809F700FC39A5 /* HorizontalPeekingPagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F174D207809F700FC39A5 /* HorizontalPeekingPagesCollectionViewController.swift */; };
 		986F175020780DFD00FC39A5 /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F174F20780DFD00FC39A5 /* MyCollectionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,11 +42,7 @@
 		986F17292078094700FC39A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986F172B2078094700FC39A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		986F17302078094700FC39A5 /* CollectionViewPeekingPagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewPeekingPagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		986F17342078094700FC39A5 /* CollectionViewPeekingPagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPeekingPagesTests.swift; sourceTree = "<group>"; };
-		986F17362078094700FC39A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		986F173B2078094700FC39A5 /* CollectionViewPeekingPagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewPeekingPagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		986F173F2078094700FC39A5 /* CollectionViewPeekingPagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPeekingPagesUITests.swift; sourceTree = "<group>"; };
-		986F17412078094700FC39A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		986F174D207809F700FC39A5 /* HorizontalPeekingPagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPeekingPagesCollectionViewController.swift; sourceTree = "<group>"; };
 		986F174F20780DFD00FC39A5 /* MyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				986F171E2078094500FC39A5 /* CollectionViewPeekingPages */,
-				986F17332078094700FC39A5 /* CollectionViewPeekingPagesTests */,
-				986F173E2078094700FC39A5 /* CollectionViewPeekingPagesUITests */,
 				986F171D2078094500FC39A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,24 +103,6 @@
 				986F172B2078094700FC39A5 /* Info.plist */,
 			);
 			path = CollectionViewPeekingPages;
-			sourceTree = "<group>";
-		};
-		986F17332078094700FC39A5 /* CollectionViewPeekingPagesTests */ = {
-			isa = PBXGroup;
-			children = (
-				986F17342078094700FC39A5 /* CollectionViewPeekingPagesTests.swift */,
-				986F17362078094700FC39A5 /* Info.plist */,
-			);
-			path = CollectionViewPeekingPagesTests;
-			sourceTree = "<group>";
-		};
-		986F173E2078094700FC39A5 /* CollectionViewPeekingPagesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				986F173F2078094700FC39A5 /* CollectionViewPeekingPagesUITests.swift */,
-				986F17412078094700FC39A5 /* Info.plist */,
-			);
-			path = CollectionViewPeekingPagesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				986F17352078094700FC39A5 /* CollectionViewPeekingPagesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				986F17402078094700FC39A5 /* CollectionViewPeekingPagesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -425,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -447,7 +419,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hershalle.CollectionViewPeekingPages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -465,7 +437,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hershalle.CollectionViewPeekingPages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
