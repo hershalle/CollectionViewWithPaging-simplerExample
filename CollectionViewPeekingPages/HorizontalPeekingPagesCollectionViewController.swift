@@ -68,8 +68,8 @@ class HorizontalPeekingPagesCollectionViewController: UICollectionViewController
         if didUseSwipeToSkipCell {
 
             let snapToIndex = indexOfCellBeforeDragging + (hasEnoughVelocityToSlideToTheNextCell ? 1 : -1)
-            let toValue = collectionViewFlowLayout.itemSize.width * CGFloat(snapToIndex)
-
+            let toValue = (collectionViewFlowLayout.itemSize.width + collectionViewFlowLayout.minimumLineSpacing) * CGFloat(snapToIndex)
+            
             // Damping equal 1 => no oscillations => decay animation:
             UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: velocity.x, options: .allowUserInteraction, animations: {
                 scrollView.contentOffset = CGPoint(x: toValue, y: 0)
